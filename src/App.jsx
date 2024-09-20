@@ -10,8 +10,8 @@ const App=()=>{
     {/* <About/>
     <Home/> */}
     {/* <Registration/> */}
-    {/* <SignUp/> */}
-    <ValidForm/>
+    <SignUp/>
+    {/* <ValidForm/> */}
     </>
   )
 }

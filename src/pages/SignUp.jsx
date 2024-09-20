@@ -20,15 +20,29 @@ const SignUp = () => {
     }
     return (
         <>
-            <form action="" method="post" onSubmit={(e) => Regist(e)} className="col-6 mx-auto shadow my-5 p-5">
+        
+            <form action="" method="post" onSubmit={(e) => Regist(e)} className="col-4 mx-auto shadow my-5 p-5 border rounded-3">
+            <h1 className="text-center text-decoration-underline">Sign Up Form</h1>
                 <div className="mt-4">
-                    <input type="text" onChange={(e) => input(e)} className="form-control" name="userName" placeholder="enter your name" />
+                    <input type="text" onChange={(e) => input(e)} className="form-control" name="userName" placeholder="Enter Your Name" />
                 </div>
                 <div className="mt-4">
-                    <input type="text" onChange={(e) => input(e)} className="form-control" name="email" placeholder="enter your email" />
+                    <input type="text" onChange={(e) => input(e)} className="form-control" name="email" placeholder="Enter Your Email" />
                 </div>
                 <div className="mt-4">
-                    <button className="btn btn-success">submit</button>
+                    <input type="password" onChange={(e) => input(e)} className="form-control" name="password" placeholder="Enter Your Password " />
+                </div>
+                <div className="mt-4">
+                    <input type="number" onChange={(e) => input(e)} className="form-control" name="mobile" placeholder="Enter Your Mobile Number" />
+                </div>
+                <div className="mt-4">
+                    <label htmlFor="" className="form-control">Gender :&nbsp;
+                <input type="radio" onChange={(e) => input(e)}  name="gender" value="male"/> Male
+                 &nbsp;<input type="radio" onChange={(e) => input(e)} name="gender" value="female"/> Female
+                </label>
+                </div>
+                <div className="mt-5 d-flex justify-content-center">
+                    <button className="btn btn-outline-light text-center ">submit</button>
                 </div>
             </form>
         </>
